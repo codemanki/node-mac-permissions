@@ -9,7 +9,6 @@ export function askForRemindersAccess(): Promise<'authorized' | 'denied'>
 export function askForCameraAccess(): Promise<'authorized' | 'denied' | 'restricted'>
 export function askForMicrophoneAccess(): Promise<'authorized' | 'denied' | 'restricted'>
 export function askForPhotosAccess(): Promise<'authorized' | 'denied' | 'restricted'>
-export function askForSpeechRecognitionAccess(): Promise<'authorized' | 'denied'>
 export function askForScreenCaptureAccess(): undefined
 export function askForAccessibilityAccess(): undefined
 export function getAuthStatus(authType: AuthType): PermissionType
@@ -21,7 +20,6 @@ export type AuthType =
   | 'full-disk-access'
   | 'camera'
   | 'photos'
-  | 'speech-recognition'
   | 'microphone'
   | 'accessibility'
   | 'location'

@@ -20,7 +20,6 @@ describe('node-mac-permissions', () => {
         'full-disk-access',
         'camera',
         'photos',
-        'speech-recognition',
         'microphone',
         'accessibility',
         'location',
